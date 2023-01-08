@@ -23,15 +23,19 @@
   </head>
   <body>
     <div class="container">
-      <input id="search-city" placeholder="Search for your city..." />
-      <input id="search-button" type="button" value="Search" />
+      
 
       <div class="weather-app-wrapper">
+        
      <div class="weather-app">
+      <div class="input">
+        <input id="search-city" placeholder="Search for your city..." />
+      <input id="search-button" type="button" value="Search" /> 
+    </div>
       <div class="currentWeather">
         <h1 id="city">Current City</h1>
         <ul>
-          <li>Last updated on: <span id="date">Friday 5:00</span> </li>
+          <li>Last updated on <span id="date">Friday 5:00</span> </li>
           <li id="description"> Sunny</li>
           </ul>
 
@@ -40,7 +44,7 @@
               <div class="d-flex weather-temperature">
               <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" />
                <div>
-               <strong id="temperature">12</strong><span class="units"> °C | °F</span>
+               <strong id="temperature">12</strong><span class="units"> °C | <a href="#">°F</a> </span>
                </div>
                 </div>
                 </div>

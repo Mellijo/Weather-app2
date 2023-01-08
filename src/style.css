@@ -1,33 +1,75 @@
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
-  display: flex;
+  color: #385170;
 }
 
 .weather-app {
   padding: 20px;
   border: 1px solid #e7eaee;
   border-radius: 10px;
+  color: #385170;
+  background-color: #9FD3C7;
 }
 
+}
 h1 {
-  color: #303043;
+  color: #142d4c;
   font-size: 24px;
-  font-weight: 100;
+  font-weight: bold;
   line-height: 28px;
   margin-bottom: 0;
 }
 ul {
   margin: 0;
   padding: 0;
+  color: #385170;
 }
 
 li {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+}
+.input {
+    margin-bottom: 20px;
+}
+#city {
+   color: #142d4c;   
+}
+#search-city {
+    background-color: #ECECEC;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #9FD3C7;
+}
+#search-button{
+    background-color: #142d4c;
+    padding: 10px;
+    color: #9FD3C7;
+    border: none;
+    border-radius: 5px;
+}
+#temperature {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #142d4c;
+}
+
+#date {
+  color: #142d4c;
+  font-weight: 300;
+}
+
+#humidity {
+  color: #142d4c;
+  font-weight: 300;
+}
+#wind {
+  color: #142d4c;
+  font-weight: 300;
 }
