@@ -28,10 +28,16 @@
       <div class="weather-app-wrapper">
         
      <div class="weather-app">
-      <div class="input">
-        <input id="search-city" placeholder="Search for your city..." />
-      <input id="search-button" type="button" value="Search" /> 
-    </div>
+      <form id ="search-form">
+        <div class="row">
+          <div class="col-9">
+        <input type="search" id="search-city" placeholder="Search for your city..." class="form-control"/>
+          </div>
+          <div class="col-3">
+      <input id="search-button" type="submit" value="Search" /> 
+           </div>    
+         </div>
+    </form>
       <div class="currentWeather">
         <h1 id="city">Current City</h1>
         <ul>
@@ -42,7 +48,7 @@
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
-              <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Clear" id="icon" />
+              <img src="" alt="" id="icon" />
                <div>
                <strong id="temperature">12</strong><span class="units"> °C | <a href="#">°F</a> </span>
                </div>
@@ -114,7 +120,7 @@
           
         </div>
         
-        <footer>  This was coded by Melanie Jones and is on  <a href="">open-source</a> 
+        <footer>This was coded by Melanie Jones and is on  <a href="">open-source</a> 
       </footer>
       </div>
       
