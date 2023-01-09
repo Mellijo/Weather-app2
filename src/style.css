@@ -10,11 +10,11 @@
   border-radius: 10px;
   color: #385170;
   background-color: #9FD3C7;
+  font-weight: 300;
 }
 
 }
 h1 {
-  color: #142d4c;
   font-size: 24px;
   font-weight: bold;
   line-height: 28px;
@@ -31,8 +31,11 @@ li {
   margin: 0;
   padding: 0;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 19px;
+}
+footer {
+    margin-top: 10px;
 }
 .input {
     margin-bottom: 20px;
@@ -53,6 +56,10 @@ li {
     color: #9FD3C7;
     border: none;
     border-radius: 5px;
+    //hover
+}
+#icon {
+    margin-bottom: 10px;
 }
 #temperature {
   font-size: 48px;
@@ -62,14 +69,14 @@ li {
 
 #date {
   color: #142d4c;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 #humidity {
   color: #142d4c;
-  font-weight: 300;
+  font-weight: 500;
 }
 #wind {
   color: #142d4c;
-  font-weight: 300;
+  font-weight: 500;
 }
