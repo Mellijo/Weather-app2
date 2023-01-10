@@ -21,6 +21,7 @@ h1 {
   font-weight: bold;
   line-height: 28px;
   margin-bottom: 0;
+  color: #142d4c;
 }
 ul {
   margin: 0;
@@ -40,9 +41,6 @@ footer {
   margin-top: 10px;
 }
 
-#city {
-  color: #142d4c;
-}
 #search-city {
   background-color: #ececec;
   border: none;
@@ -58,10 +56,29 @@ footer {
   border-radius: 5px;
 }
 
-#temperature {
-  font-size: 48px;
+.overview {
+  margin-bottom: 20px;
+}
 
+.weather-temperature img {
+  margin-right: 10px;
+  height: 64px;
+  width: 64px;
+}
+
+.weather-temperature strong {
+  line-height: 1;
+  font-size: 48px;
   color: #142d4c;
+}
+
+.weather-temperature .units {
+  position: relative;
+  font-size: 16px;
+  top: -20px;
+}
+.first {
+  margin-bottom: 10px;
 }
 
 #date {

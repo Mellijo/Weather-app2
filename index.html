@@ -28,6 +28,7 @@
       <div class="weather-app-wrapper">
         
      <div class="weather-app">
+      <div class="overview">
       <form id ="search-form">
         <div class="row">
           <div class="col-9">
@@ -40,17 +41,21 @@
     </form>
       <div class="currentWeather">
         <h1 id="city">Current City</h1>
-        <ul>
+        <ul class="first">
           <li>Last updated on <span id="date">Friday 5:00</span> </li>
           <li id="description"> Sunny</li>
           </ul>
-
+</div>
           <div class="row">
             <div class="col-6">
               <div class="d-flex weather-temperature">
-              <img src="" alt="" id="icon" />
+                <div class="clearfix weather-temperature">
+              <img src="" alt="" id="icon" class="float-left"/>
+              <div class="float-end">
                <div>
                <strong id="temperature">12</strong><span class="units"> °C | <a href="#">°F</a> </span>
+               </div>
+               </div>
                </div>
                 </div>
                 </div>
