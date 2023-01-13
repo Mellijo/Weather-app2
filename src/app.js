@@ -1,4 +1,5 @@
 function formatDate(timestamp) {
+  console.log("formatDate", timestamp);
   let date = new Date(timestamp);
   let hours = date.getHours();
   if (hours < 10) {
@@ -30,23 +31,22 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
+  console.log(response);
 
-  temperatureElement.innerHTML = Math.round(response.data.main.temp);
-  cityElement.innerHTML = response.data.name;
-  descriptionElement.innerHTML = response.data.weather[0].main;
-  humidityElement.innerHTML = response.data.main.humidity;
+  temperatureElement.innerHTML = Math.round(response.data.temperature.current);
+  cityElement.innerHTML = response.data.city;
+  descriptionElement.innerHTML = response.data.condition.description;
+  humidityElement.innerHTML = response.data.temperature.humidity;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
-  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  dateElement.innerHTML = formatDate(response.data.time * 1000);
+  iconElement.setAttribute("src", response.data.condition.icon_url);
+  //iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
-  let apiKey = "5c99515cb498411aa2dd830957d478c5";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+  let apiKey = "6a4024581cfab2ad0f49c537bof0td13";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
 
@@ -59,7 +59,7 @@ function handleSubmit(event) {
 function displayForecast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thur", "Fri", "Sat", "Sun"];
+  let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
 
   let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
