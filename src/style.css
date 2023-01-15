@@ -2,6 +2,7 @@ h1 {
   font-size: 24px;
   font-weight: bold;
   line-height: 28px;
+  margin-top: 10px;
   margin-bottom: 0;
   color: #142d4c;
 }
@@ -70,7 +71,7 @@ footer {
 .weather-forecast-date {
   font-size: 16px;
   color: #142d4c;
-  font-weight: 400;
+  font-weight: 800;
   opacity: 0.5;
 }
 

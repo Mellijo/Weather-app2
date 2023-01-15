@@ -39,7 +39,7 @@ function displayForecast(response) {
       forecastHTML =
         forecastHTML +
         ` <div class="col-2">
-          <div class="weather-forecast-date">${formatDate(
+          <div class="weather-forecast-date">${formatDay(
             forecastDay.time * 1000
           )}</div>
         
